@@ -23,7 +23,7 @@ namespace ConsoleEngine
         public Camera(Point position, int width, int height) : base(position, width, height)
         {
             this._buffer = new ColoredChar[height, width];
-            this._bufferBounds = new Bounds(0, 0, width, height);
+            this._bufferBounds = new Bounds(0, 0, width - 1, height - 1);
         }
 
         public Camera(int x, int y, int width, int height) : this(new Point(x, y), width, height)
